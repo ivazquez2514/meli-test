@@ -1,10 +1,12 @@
+import Header from './layout/Header';
+
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <h1>MELI Test</h1>
-    </div>
+    <main className="App">
+      <Header />
+    </main>
   );
 }
 
