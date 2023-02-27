@@ -4,8 +4,8 @@ import {
 
 function Header() {
 
-    const onSearchSubmit = (values) => {
-        console.log(values);
+    const onSearchSubmit = ({ search }) => {
+        window.location.href = `/items?search=${search}`;
     }
 
     return (

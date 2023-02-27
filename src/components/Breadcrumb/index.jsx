@@ -5,7 +5,12 @@ function Breadcrumb({
 }) {
     return (
         <div className="breadcrumb">
-            {items.map((item, index) => <p key={`${item.toLowerCase().replace(' ', '_')}_${index}`}>{item}&nbsp;&nbsp;{'>'}&nbsp;&nbsp;</p>)}
+            {items.map((item, index) =>
+                <p
+                    key={`${item.toLowerCase().replace(' ', '_')}_${index}`}>
+                        {item}&nbsp;&nbsp;{index !== items.length - 1 && '>'}&nbsp;&nbsp;
+                </p>
+            )}
         </div>
     );
 }
